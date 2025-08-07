@@ -41,15 +41,7 @@ O EducaTech foi desenvolvido como parte da Atividade Extensionista II do curso C
 - **Validação Avançada**: Feedback visual em tempo real
 - **Responsividade**: Adaptação para diferentes tamanhos de tela
 
-#### 4. **Dashboard (dashboard.html)** ✨ **ATUALIZADO**
-- **Painel do Aluno**: Seção completa para acompanhamento estudantil
-- **Interface Administrativa**: Gráficos de progresso e métricas
-- **Chat com IA Tutor**: Sistema de assistência inteligente
-- **Sistema de Conquistas**: Gamificação do aprendizado
-- **Design Profissional**: Espaçamentos e layout otimizados
-- **Navegação Intuitiva**: Sidebar com menu organizado
-
-#### 5. **Página do Aluno (aluno.html)** 🆕 **NOVO**
+#### 4. **Página do Aluno (aluno.html)** 🆕 **NOVO**
 - **Interface Dedicada**: Página específica para o perfil do aluno
 - **Menu Lateral**: Navegação com notificações e perfil integrados
 - **Métricas Detalhadas**: Gráficos de performance acadêmica
@@ -189,12 +181,6 @@ A plataforma é totalmente responsiva com breakpoints:
 - Imagem de adolescente no hero
 - Menu de navegação limpo
 - Seções bem organizadas
-
-#### Dashboard
-- Painel do Aluno completo
-- Gráficos de progresso
-- Sistema de conquistas
-- Chat com IA Tutor
 
 #### Página do Aluno
 - Interface dedicada ao estudante
