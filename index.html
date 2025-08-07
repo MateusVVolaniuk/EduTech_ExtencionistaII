@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaTech - Ensino Ampliado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="index-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>EducaTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-2" href="login.html">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        <i class="fas fa-graduation-cap me-3"></i>Ensino Ampliado: IA e Colaboração em Foco
+                    </h1>
+                    <p class="lead mb-4 text-white-50">
+                        Plataforma educacional inovadora que utiliza inteligência artificial para personalizar 
+                        a experiência de aprendizado dos alunos do 6° ano ao 3° ano do ensino médio.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="register.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>Cadastre-se
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play me-2"></i>Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="hero-illustration">
+                            <img src="https://img.freepik.com/fotos-premium/retrato-de-um-adolescente-olhando-para-a-camera-o-menino-aluno-em-sala-de-aula-com-o-grupo-de-criancas-de-alunos-e-a-professora-educacao-escola-faculdade-conceito-de-adolescentes_116407-12202.jpg" 
+                                 alt="Estudante adolescente em sala de aula" 
+                                 class="hero-student-image">
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-users text-white"></i>
+                                    <span class="text-white">+1000 Alunos</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-book text-white"></i>
+                                    <span class="text-white">+500 Exercícios</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-trophy text-white"></i>
+                                    <span class="text-white">+50 Certificados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-primary mb-3">
+                        <i class="fas fa-star me-3"></i>Recursos Principais
+                    </h2>
+                    <p class="lead">Descubra como a tecnologia pode transformar sua experiência educacional</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-brain fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">IA Personalizada</h4>
+                        <p>Inteligência artificial que identifica suas dificuldades e oferece exercícios personalizados para otimizar seu aprendizado.</p>
+                        <div class="feature-benefits mt-3">
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Análise de Desempenho</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Exercícios Adaptativos</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Feedback Inteligente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-success"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Acompanhamento de Progresso</h4>
+                        <p>Monitore seu desenvolvimento acadêmico com gráficos e relatórios detalhados de desempenho.</p>
+                        <div class="feature-benefits mt-3">
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Gráficos Interativos</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Relatórios Detalhados</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Metas Personalizadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-gamepad fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Simulados Interativos</h4>
+                        <p>Teste seus conhecimentos com simulados de vestibular e outras avaliações em formato gamificado.</p>
+                        <div class="feature-benefits mt-3">
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Simulados Realistas</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Gamificação</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <span>Ranking Competitivo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">
+                        <i class="fas fa-info-circle me-3"></i>Sobre o Projeto
+                    </h2>
+                    <p class="lead mb-4">
+                        O EducaTech foi desenvolvido como parte da Atividade Extensionista II do curso 
+                        CST em Análise e Desenvolvimento de Sistemas da UNINTER.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Educação de Qualidade (ODS 4)</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Tecnologia Inclusiva</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Aprendizado Personalizado</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Interface Intuitiva</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="register.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Começar Agora
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center">
+                        <div class="about-illustration">
+                            <i class="fas fa-graduation-cap fa-6x text-primary mb-4"></i>
+                            <div class="about-stats">
+                                <div class="stat-card">
+                                    <i class="fas fa-users text-primary"></i>
+                                    <h4 class="text-primary">1000+</h4>
+                                    <p>Alunos Ativos</p>
+                                </div>
+                                <div class="stat-card">
+                                    <i class="fas fa-book text-success"></i>
+                                    <h4 class="text-success">500+</h4>
+                                    <p>Exercícios</p>
+                                </div>
+                                <div class="stat-card">
+                                    <i class="fas fa-trophy text-warning"></i>
+                                    <h4 class="text-warning">50+</h4>
+                                    <p>Certificados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-graduation-cap me-2"></i>EducaTech
+                    </h5>
+                    <p class="mb-0">Ensino Ampliado: IA e Colaboração em Foco</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <strong>Autores:</strong><br>
+                        <i class="fas fa-user me-1"></i>Mateus Volaniuk (RU: 4382927)<br>
+                        <i class="fas fa-user me-1"></i>Bruno Telles Rocha de Menezes (RU: 4318152)
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        <i class="fas fa-copyright me-1"></i>2025 EducaTech. Projeto desenvolvido para a UNINTER - Atividade Extensionista II.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

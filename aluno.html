@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Aluno - Plataforma Educacional</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom CSS -->
+    <link href="css/aluno.css" rel="stylesheet">
+</head>
+<body class="aluno-page">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EducaTech</span>
+            </div>
+        </div>
+        
+        <div class="sidebar-user">
+            <div class="user-avatar">
+                <img src="https://img.freepik.com/fotos-premium/retrato-de-um-adolescente-olhando-para-a-camera-o-menino-aluno-em-sala-de-aula-com-o-grupo-de-criancas-de-alunos-e-a-professora-educacao-escola-faculdade-conceito-de-adolescentes_116407-12202.jpg" alt="Avatar" id="userAvatar">
+                <div class="user-status online"></div>
+            </div>
+            <div class="user-info">
+                <h6 id="userName">João Silva</h6>
+                <small id="userGrade">Aluno</small>
+            </div>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link" title="Início">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="aluno.html" class="nav-link" title="Página do Aluno">
+                    <i class="fas fa-user-graduate"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#exercises" class="nav-link" title="Exercícios">
+                    <i class="fas fa-book"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#simulados" class="nav-link" title="Simulados">
+                    <i class="fas fa-clipboard-list"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#progress" class="nav-link" title="Progresso">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#ai-tutor" class="nav-link" title="IA Tutor">
+                    <i class="fas fa-robot"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#achievements" class="nav-link" title="Conquistas">
+                    <i class="fas fa-trophy"></i>
+                </a>
+            </li>
+                        <li class="nav-item">
+                <a href="#profile" class="nav-link" title="Perfil">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#notifications" class="nav-link" title="Notificações">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge bg-danger">3</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <button class="btn btn-outline-danger btn-sm w-100" id="logoutBtn" title="Sair">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+         </div>
+     </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Content Area -->
+        <div class="content-area">
+        <!-- Header Section -->
+        <header class="page-header">
+            <div class="container-fluid">
+                <div class="header-content">
+                    <div class="welcome-section">
+                        <h1>Bem-vindo, João Silva!</h1>
+                        <p>Seu centro de estudos personalizado</p>
+                        <div class="student-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-book"></i>
+                                <span>15 disciplinas ativas</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <span>45h estudadas este mês</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>8 conquistas desbloqueadas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-play me-2"></i>Continuar Estudos
+                        </button>
+                        <button class="btn btn-outline-primary">
+                            <i class="fas fa-cog me-2"></i>Configurações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Sections -->
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <!-- Quick Actions -->
+                <section class="quick-actions">
+                    <div class="section-title">
+                        <h2><i class="fas fa-bolt me-2"></i>Ações Rápidas</h2>
+                    </div>
+                    <div class="actions-grid">
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>Matemática</h3>
+                            <p>Álgebra - Equações do 2º grau</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">75% concluído</span>
+                            <button class="btn btn-primary btn-sm">Continuar</button>
+                        </div>
+                        
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3>Ciências</h3>
+                            <p>Química - Compostos Orgânicos</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">45% concluído</span>
+                            <button class="btn btn-primary btn-sm">Continuar</button>
+                        </div>
+                        
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>Português</h3>
+                            <p>Gramática - Concordância Verbal</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="progress-text">90% concluído</span>
+                            <button class="btn btn-primary btn-sm">Finalizar</button>
+                        </div>
+                        
+                        <div class="action-card">
+                            <div class="action-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>História</h3>
+                            <p>História do Brasil - Independência</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 30%"></div>
+                            </div>
+                            <span class="progress-text">30% concluído</span>
+                            <button class="btn btn-primary btn-sm">Continuar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Performance Overview -->
+                <section class="performance-overview">
+                    <div class="section-title">
+                        <h2><i class="fas fa-chart-line me-2"></i>Visão Geral do Desempenho</h2>
+                    </div>
+                    <div class="performance-grid">
+                        <div class="performance-card">
+                            <div class="card-header">
+                                <h3>Tempo de Estudo</h3>
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="card-value">12h 30min</div>
+                            <div class="card-chart">
+                                <canvas id="studyTimeChart" height="60"></canvas>
+                            </div>
+                            <div class="card-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+15% esta semana</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="card-header">
+                                <h3>Taxa de Acerto</h3>
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="card-value">85%</div>
+                            <div class="card-chart">
+                                <canvas id="accuracyChart" height="60"></canvas>
+                            </div>
+                            <div class="card-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+5% esta semana</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="card-header">
+                                <h3>Exercícios Completados</h3>
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="card-value">127</div>
+                            <div class="card-chart">
+                                <canvas id="exercisesChart" height="60"></canvas>
+                            </div>
+                            <div class="card-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+23 esta semana</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="card-header">
+                                <h3>Pontos Ganhos</h3>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="card-value">2,450</div>
+                            <div class="card-chart">
+                                <canvas id="pointsChart" height="60"></canvas>
+                            </div>
+                            <div class="card-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+320 esta semana</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Activities -->
+                <section class="recent-activities">
+                    <div class="section-title">
+                        <h2><i class="fas fa-history me-2"></i>Atividades Recentes</h2>
+                    </div>
+                    <div class="activities-list">
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Completou exercício de Matemática</h4>
+                                <p>Equação do segundo grau - 10 pontos ganhos</p>
+                                <span class="activity-time">Há 2 horas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Finalizou módulo de Português</h4>
+                                <p>Concordância verbal - 25 pontos ganhos</p>
+                                <span class="activity-time">Há 4 horas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon in-progress">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Iniciou estudo de Ciências</h4>
+                                <p>Química orgânica - Compostos básicos</p>
+                                <span class="activity-time">Há 6 horas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon achievement">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Desbloqueou conquista "Matemático Avançado"</h4>
+                                <p>Completou 50 exercícios de Matemática</p>
+                                <span class="activity-time">Ontem</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Participou de simulado ENEM</h4>
+                                <p>Matemática e suas tecnologias - 85% de acerto</p>
+                                <span class="activity-time">Ontem</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Upcoming Tasks -->
+                <section class="upcoming-tasks">
+                    <div class="section-title">
+                        <h2><i class="fas fa-calendar-alt me-2"></i>Próximas Tarefas</h2>
+                    </div>
+                    <div class="tasks-list">
+                        <div class="task-item priority-high">
+                            <div class="task-time">
+                                <span class="time">14:00</span>
+                                <span class="date">Hoje</span>
+                            </div>
+                            <div class="task-content">
+                                <h4>Revisão de História</h4>
+                                <p>Período colonial brasileiro</p>
+                                <span class="task-duration">1h 30min</span>
+                            </div>
+                            <div class="task-status">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="task-item priority-medium">
+                            <div class="task-time">
+                                <span class="time">16:30</span>
+                                <span class="date">Hoje</span>
+                            </div>
+                            <div class="task-content">
+                                <h4>Exercícios de Geografia</h4>
+                                <p>Geografia física do Brasil</p>
+                                <span class="task-duration">45min</span>
+                            </div>
+                            <div class="task-status">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="task-item priority-low">
+                            <div class="task-time">
+                                <span class="time">09:00</span>
+                                <span class="date">Amanhã</span>
+                            </div>
+                            <div class="task-content">
+                                <h4>Simulado ENEM</h4>
+                                <p>Ciências da Natureza</p>
+                                <span class="task-duration">2h</span>
+                            </div>
+                            <div class="task-status">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="task-item priority-low">
+                            <div class="task-time">
+                                <span class="time">15:00</span>
+                                <span class="date">Quinta</span>
+                            </div>
+                            <div class="task-content">
+                                <h4>Sessão com IA Tutor</h4>
+                                <p>Dúvidas sobre Química</p>
+                                <span class="task-duration">30min</span>
+                            </div>
+                            <div class="task-status">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements -->
+                <section class="achievements">
+                    <div class="section-title">
+                        <h2><i class="fas fa-medal me-2"></i>Conquistas Recentes</h2>
+                    </div>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon gold">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Matemático Avançado</h4>
+                                <p>Completou 50 exercícios de Matemática</p>
+                                <span class="achievement-date">Conquistado há 2 dias</span>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon silver">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Estudioso Consistente</h4>
+                                <p>7 dias consecutivos de estudo</p>
+                                <span class="achievement-date">Conquistado há 1 semana</span>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon bronze">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Leitor Avançado</h4>
+                                <p>Completou 30 exercícios de Português</p>
+                                <span class="achievement-date">Conquistado há 2 semanas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon special">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Tech-Savvy</h4>
+                                <p>Uso eficiente da IA Tutor</p>
+                                <span class="achievement-date">Conquistado há 3 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/aluno.js"></script>
+</body>
+</html> 
